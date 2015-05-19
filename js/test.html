@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+
+function fullBar($totalDrinks){
+
+	//calculate wine at 50%
+		$fTotWine = $totalDrinks * .50;
+
+	//calculate beer at 20%
+		$fTotBeer = $totalDrinks * .20;
+
+	//calculate liquor at 30%
+		$fTotLiquor = $totalDrinks * .30;
+
+		return $fTotWine;
+		return $fTotLiquor;
+		return $fTotBeer;
+
+		echo $fTotBeer;
+}
+
+document.getElementById("demo").innerHTML = fullBar(500);
+</script>
+
+</body>
+</html>
